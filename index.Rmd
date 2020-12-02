@@ -46,7 +46,7 @@ class: center, middle
  
 --
 
- - **BONUS**
+ - **BONUS!**
  
 --
 
