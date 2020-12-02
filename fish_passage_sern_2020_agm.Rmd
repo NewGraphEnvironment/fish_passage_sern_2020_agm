@@ -1,0 +1,389 @@
+---
+title: "Fish Passage"
+subtitle: "⚔<br/>Considerations for Aquatic Restoration"
+author: "Al Irvine, R.P.Bio."
+institute: "New Graph Environment"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE,
+                      fig.align="center")
+
+
+```
+
+
+class: center, middle
+
+**Four Phase Approach to Fish Passage**
+
+--
+
+ - Assessment
+
+--
+
+ - Habitat Confirmation
+
+--
+
+ - Design Proposal
+
+--
+
+ - Remediation
+ 
+--
+
+ - **BONUS**
+ 
+--
+
+
+ - <span style="color: red;">Monitoring!</span> 
+
+
+???
+mention standardized templates for fish passage assessment and the ones that we use for fisheries information.
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/tab_barrier_scoring.png")
+```
+
+<br>
+
+
+```{r}
+knitr::include_graphics("fig/tab_barrier_result.png")
+```
+
+???
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/tab_cost_rd_mult.png")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/bcdata.JPG")
+```
+
+[BC Data Catalogue](https://catalogue.data.gov.bc.ca/dataset?q=pscis&download_audience=Public&sort=score+desc%2C+record_publish_date+desc)
+
+???
+mention that the gov has done an excellent job of managing the data, standardizing it and making it available
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/imap1.JPG")
+```
+
+[iMapBC](https://maps.gov.bc.ca/ess/hm/imap4m/)
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/imap_station.JPG")
+```
+
+???
+Gitxsan Watershed Authorities report that Xsan Xsagiibil was a 
+fishing site located at the mouth of Station Creek (Xsi Gwin Sagiiblax). 
+
+SKR (2006) conducted a detailed inspection, offered rehabilitation design 
+options and identified the natural limits of potential fish distribution to support 
+rehabilitation efforts.
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/imap_station_outlet.JPG")
+```
+
+---
+class: center, middle
+
+[Maps](https://hillcrestgeo.ca/outgoing/fishpassage/projects/bulkley/FishPassage_093M.106.pdf)
+
+```{r}
+knitr::include_graphics("fig/hillcrest_station_map_zoomed.JPG")
+```
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/hillcrest_station_map_zoomed_legend.JPG")
+```
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/bcfishpass.JPG")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/bcfishpass_liscence.JPG")
+```
+
+
+
+---
+class: center, middle
+
+```{r}
+knitr::include_graphics("fig/overview_map_pars.jpg")
+knitr::include_graphics("fig/fwcp Logo for reports.jpg")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/arctic_outlet.JPG")
+```
+
+???
+here is a good example of a dead ringer barrier on a 12m wide system that 
+should be connected to the Bulkley River
+
+---
+class: center, middle
+
+```{r}
+knitr::include_graphics("fig/downstream2.JPG")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/overview_map_bulk.jpg")
+knitr::include_graphics("fig/HCTFLogo-Hst.jpg")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/porph.JPG")
+```
+
+???
+here is a good example of a dead ringer barrier on a 12m wide system that 
+should be connected to the Bulkley River
+
+---
+class: center, middle
+
+```{r}
+knitr::include_graphics("fig/20200827_140710_inlet.JPG")
+```
+
+???
+Here is Byman Creek also in the Bulkley River watershed. Not so straight forward.
+Streamkeepers report fry moving through observed in overwintering studies but is
+the depth an issue for adult Chinook. We hope to look into it!
+
+---
+class: center, middle
+
+```{r}
+knitr::include_graphics("fig/20200828_093148_outlet.JPG")
+```
+
+???
+here is one right in the middle. Richfield Creek. 13m wide channel, amazing habitat.  An issue? 
+One issue is that it would cost millions to replace. How do we find out how much of an issue it is to fish?
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/IMG_2425.JPG")
+```
+
+
+
+
+
+<!-- --- -->
+
+<!-- ```{r} -->
+<!-- library(bcdata) -->
+<!-- library(bcmaps) -->
+<!-- library(bcmapsdata) -->
+<!-- library(ggplot2) -->
+<!-- library(tidyverse) -->
+<!-- ``` -->
+
+<!-- ```{r echo= T} -->
+<!-- get_this <- bcdc_tidy_resources('pscis-remediation') %>% -->
+<!--   filter(bcdata_available == T)  %>% -->
+<!--   pull(package_id) -->
+<!-- ``` -->
+
+<!-- -- -->
+
+<!-- ```{r echo= T} -->
+<!-- fish_passage_remediation <- bcdc_get_data(get_this) -->
+<!-- ``` -->
+<!-- -- -->
+
+<!-- ```{r echo= T, fig.height=3} -->
+<!-- ggplot() +  -->
+<!--   geom_sf(data = bc_bound) + -->
+<!--   geom_sf(data = fish_passage_remediation) + #<< -->
+<!--   theme_minimal() -->
+<!-- ``` -->
+
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/fish_sampling1.JPG")
+```
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/fish_co.JPG")
+```
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/fish_bt.JPG")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/plot_fish_box.png")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/uav_flight.JPG")
+```
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/uav_gibson.jpg")
+```
+
+
+---
+class: center, middle
+
+
+```{r}
+knitr::include_graphics("fig/uav_arctic.jpg")
+```
+
+
+
+---
+class: center, middle
+
+*SERN Projects*
+
+<br>
+
+--
+[Bulkley Watershed Fish Passage Restoration Planning](https://newgraphenvironment.github.io/Bulkley_Planning/)
+
+<br>
+--
+[Parsnip Watershed Fish Passage Restoration Planning](https://newgraphenvironment.github.io/Parsnip_Fish_Passage/)
+<br>
+[Parsnip Arctic Lake Restoration Opportunity](https://www.youtube.com/watch?v=-foWvX1MSkg)
+
+<br>
+--
+[Skeena Salmon Data Portal](https://github.com/NewGraphEnvironment/skt_sern)
+
+???
+Working on connectivity between data sets as well as between partners and stakeholders and rode owners and non-profits and first nations and railway companies and pipeline companies and forestry companies.
+And listening to everyone because our connections to what we think matter maybe matters the most.
+My passion is linking together datasets to tell stories. When we tell stories we can preserve truth and we can explore truth rediscover our cultures while reinventing new ones.
+
+---
+class: center, top
+
+# Thank you!
+
+
+
+<video width="100%" height="70%" style="position:absolute;top:50;right:0;" autoplay>
+<source src="media/compressed_fixed_sea_viz.mp4" type="video/mp4">
+</video>
+
+
+```{r eval = F}
+knitr::include_graphics("fig/SERNbc-Logo-FULL.jpg")
+```
+
+
+
