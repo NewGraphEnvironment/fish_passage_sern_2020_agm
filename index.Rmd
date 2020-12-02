@@ -155,6 +155,7 @@ knitr::include_graphics("fig/hillcrest_station_map_zoomed_legend.JPG")
 ---
 class: center, middle
 
+[Simon Norris Hillcrest Geographics Programming Tools](https://github.com/smnorris/bcfishpass)
 
 ```{r}
 knitr::include_graphics("fig/bcfishpass.JPG")
