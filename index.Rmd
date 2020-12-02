@@ -62,7 +62,7 @@ class: center, middle
 
 
 ```{r}
-knitr::include_graphics("fig/tab_barrier_scoring.png")
+knitr::include_graphics("tab_barrier_scoring.png")
 ```
 
 <br>
